@@ -33,3 +33,10 @@
 .hp{position:absolute;left:-9999em;top:auto;width:1px;height:1px;overflow:hidden}
 .error{display:none;padding:16px;border-left:3px solid #b23a2e;background:#fbeae8;margin-top:18px}
 .error.show{display:block}
+.captcha{border:1px dashed #cfc6b2;background:#fdfbf6;padding:14px 16px}
+.captcha-ask{display:block;font:700 12px Arial;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.captcha-ask strong{color:var(--navy);font-size:22px;letter-spacing:0;margin:0 4px}
+.symbols{display:flex;gap:10px;flex-wrap:wrap}
+.sym-btn{flex:0 1 56px;width:56px;height:56px;display:grid;place-items:center;font:26px Georgia;border:1px solid #cfc6b2;background:#fff;color:var(--ink);cursor:pointer;padding:0}
+.sym-btn:hover{border-color:var(--gold)}
+.sym-btn.selected{background:var(--gold);border-color:var(--gold);color:#fff}

@@ -144,9 +144,9 @@ ligne (et son statut) dans cette feuille.
 
 ## Limites & sécurité (pour information)
 
-- **Antispam maison inclus** : champ piège invisible, délai minimum de 5 s, filtre
-  mots-clés/liens, limite de débit (10 envois/heure, 1 envoi/10 min par adresse), log de
-  chaque tentative.
+- **Antispam maison inclus** : question « cliquer sur le bon symbole » (reconnaissance
+  visuelle), champ piège invisible, délai minimum de 5 s, filtre mots-clés/liens, limite
+  de débit (10 envois/heure, 1 envoi/10 min par adresse), log de chaque tentative.
 - **Quota Gmail** : ~100 e-mails/jour au-delà de 100 destinataires distincts — largement
   suffisant pour un formulaire de contact.
 - Le navigateur ne peut pas lire la réponse de Google (pas d'en-têtes CORS) : la

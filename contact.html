@@ -97,6 +97,14 @@
 <input type="checkbox" name="consent" value="1" required> J’accepte que mes informations soient utilisées pour répondre à ma demande. *</label>
 </div>
 <div class="field full">
+<div class="captcha" id="captcha" role="group" aria-labelledby="captcha-ask">
+<span class="captcha-ask" id="captcha-ask">Question de sécurité</span>
+<div class="symbols" id="captcha-symbols"></div>
+</div>
+<input type="hidden" id="captcha-response" name="captcha_response" value="">
+<input type="hidden" id="captcha-expected" name="captcha_expected" value="">
+</div>
+<div class="field full">
 <button class="btn" type="submit">Envoyer ma demande →</button>
 <div class="success" id="success" role="status">Votre demande a bien été envoyée. La holding vous répondra à l’adresse indiquée dans les meilleurs délais.</div>
 <div class="error" id="error" role="alert">Une erreur est survenue pendant l’envoi. Merci de réessayer dans quelques instants.</div>

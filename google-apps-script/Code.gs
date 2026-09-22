@@ -67,9 +67,15 @@ function traiter(e) {
   };
   const honeypot = f('website');
   const tsClient = parseInt(p.ts, 10) || 0;
+  const captchaReponse = f('captcha_response');
+  const captchaAttendu = f('captcha_expected');
 
   // 1) Champ piège rempli → bot. Répondre « ok » et n'envoyer rien.
   if (honeypot !== '') return fin(rec, 'faux_honeypot');
+
+  // 1bis) Question de reconnaissance de symbole
+  if (!captchaAttendu || captchaReponse !== captchaAttendu
+    || captchaReponse.length > 4 || captchaAttendu.length > 4) return fin(rec, 'faux_captcha');
 
   // 2) Validations de base
   if (!rec.email || !rec.prenom || !rec.nom || !rec.objet) return fin(rec, 'faux_champs_manquants');
