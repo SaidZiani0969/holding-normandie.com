@@ -30,3 +30,6 @@
 .gallery-caption strong,.gallery-caption small{display:block}.gallery-caption small{font:11px Arial;margin-top:5px;color:#dce3e8}.status-pill{display:inline-block;margin-bottom:9px;padding:5px 9px;background:#b28b4e;color:white;font:700 10px Arial;letter-spacing:.12em;text-transform:uppercase}.gallery-plan img{object-position:center}.gallery-solar .gallery-caption{padding-top:54px}
 .gallery-plan img{object-fit:contain;background:#f4f0e8}
 .gallery-mozart img{object-position:center 18%}.gallery-caption a{color:#f0d39e;text-decoration:underline;text-underline-offset:3px}
+.hp{position:absolute;left:-9999em;top:auto;width:1px;height:1px;overflow:hidden}
+.error{display:none;padding:16px;border-left:3px solid #b23a2e;background:#fbeae8;margin-top:18px}
+.error.show{display:block}

@@ -40,15 +40,17 @@
 <div class="eyebrow">Votre démarche</div>
 <h2>Parlons de votre projet</h2>
 <p>Ce formulaire est destiné en priorité aux personnes souhaitant obtenir des informations sur les actions, mais aussi aux entrepreneurs et partenaires.</p>
-<div class="risk">
-<strong>Version de démonstration</strong>
-<br>Le formulaire simule actuellement la confirmation. L’adresse de réception définitive devra être fournie avant la mise en ligne finale.</div>
 </div>
 <form class="form-card" id="investor-form">
+<div class="hp" aria-hidden="true">
+<label for="website">Votre site web</label>
+<input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+</div>
+<input type="hidden" id="ts" name="ts" value="">
 <div class="form-grid">
 <div class="field full">
 <label for="objet">Objet principal *</label>
-<select id="objet" required>
+<select id="objet" name="objet" required>
 <option value="actions" selected>Je souhaite recevoir des informations sur les actions</option>
 <option>Je souhaite être recontacté au sujet de l’ouverture du capital</option>
 <option>Je souhaite proposer un partenariat</option>
@@ -57,27 +59,27 @@
 </div>
 <div class="field">
 <label for="prenom">Prénom *</label>
-<input id="prenom" required autocomplete="given-name">
+<input id="prenom" name="prenom" required autocomplete="given-name">
 </div>
 <div class="field">
 <label for="nom">Nom *</label>
-<input id="nom" required autocomplete="family-name">
+<input id="nom" name="nom" required autocomplete="family-name">
 </div>
 <div class="field">
 <label for="email">E-mail *</label>
-<input id="email" type="email" required autocomplete="email">
+<input id="email" name="email" type="email" required autocomplete="email">
 </div>
 <div class="field">
 <label for="telephone">Téléphone</label>
-<input id="telephone" type="tel" autocomplete="tel">
+<input id="telephone" name="telephone" type="tel" autocomplete="tel">
 </div>
 <div class="field">
 <label for="societe">Société</label>
-<input id="societe" autocomplete="organization">
+<input id="societe" name="societe" autocomplete="organization">
 </div>
 <div class="field">
 <label for="montant">Montant indicatif envisagé</label>
-<select id="montant">
+<select id="montant" name="montant">
 <option>Je préfère en discuter</option>
 <option>Moins de 1 000 €</option>
 <option>1 000 € à 5 000 €</option>
@@ -87,16 +89,17 @@
 </div>
 <div class="field full">
 <label for="message">Votre message</label>
-<textarea id="message" placeholder="Précisez votre demande ou vos questions...">
+<textarea id="message" name="message" placeholder="Précisez votre demande ou vos questions...">
 </textarea>
 </div>
 <div class="field full">
 <label class="check">
-<input type="checkbox" required> J’accepte que mes informations soient utilisées pour répondre à ma demande. *</label>
+<input type="checkbox" name="consent" value="1" required> J’accepte que mes informations soient utilisées pour répondre à ma demande. *</label>
 </div>
 <div class="field full">
 <button class="btn" type="submit">Envoyer ma demande →</button>
-<div class="success" id="success" role="status">Votre demande a bien été enregistrée dans cette démonstration. Le raccordement à l’adresse e-mail du client sera réalisé dans la version finale.</div>
+<div class="success" id="success" role="status">Votre demande a bien été envoyée. La holding vous répondra à l’adresse indiquée dans les meilleurs délais.</div>
+<div class="error" id="error" role="alert">Une erreur est survenue pendant l’envoi. Merci de réessayer dans quelques instants.</div>
 </div>
 </div>
 </form>
