@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact — Holding Normandie Saint-Lazare</title>
+<meta name="description" content="Demandez le dossier d'information sur l'ouverture du capital de la Holding Normandie Saint-Lazare.">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+<div class="container nav">
+<a class="brand" href="index.html">
+<span class="monogram">HNS</span>
+<span class="brand-copy">Holding Normandie<span>Saint-Lazare</span>
+</span>
+</a>
+<button class="menu-button" aria-label="Ouvrir le menu">☰</button>
+<nav class="navlinks">
+<a href="index.html">Accueil</a>
+<a href="holding.html">La Holding</a>
+<a href="actifs.html">Actifs</a>
+<a href="actions.html">Devenir actionnaire</a>
+<a class="active" href="contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main>
+<section class="page-hero">
+<div class="container">
+<div class="eyebrow">Prendre contact</div>
+<h1>Recevez les informations sur l’ouverture du capital</h1>
+<p>Indiquez l’objet de votre demande. La holding pourra ensuite vous transmettre les documents disponibles et répondre à vos questions.</p>
+</div>
+</section>
+<section class="section">
+<div class="container form-wrap">
+<div>
+<div class="eyebrow">Votre démarche</div>
+<h2>Parlons de votre projet</h2>
+<p>Ce formulaire est destiné en priorité aux personnes souhaitant obtenir des informations sur les actions, mais aussi aux entrepreneurs et partenaires.</p>
+<div class="risk">
+<strong>Version de démonstration</strong>
+<br>Le formulaire simule actuellement la confirmation. L’adresse de réception définitive devra être fournie avant la mise en ligne finale.</div>
+</div>
+<form class="form-card" id="investor-form">
+<div class="form-grid">
+<div class="field full">
+<label for="objet">Objet principal *</label>
+<select id="objet" required>
+<option value="actions" selected>Je souhaite recevoir des informations sur les actions</option>
+<option>Je souhaite être recontacté au sujet de l’ouverture du capital</option>
+<option>Je souhaite proposer un partenariat</option>
+<option>Autre demande</option>
+</select>
+</div>
+<div class="field">
+<label for="prenom">Prénom *</label>
+<input id="prenom" required autocomplete="given-name">
+</div>
+<div class="field">
+<label for="nom">Nom *</label>
+<input id="nom" required autocomplete="family-name">
+</div>
+<div class="field">
+<label for="email">E-mail *</label>
+<input id="email" type="email" required autocomplete="email">
+</div>
+<div class="field">
+<label for="telephone">Téléphone</label>
+<input id="telephone" type="tel" autocomplete="tel">
+</div>
+<div class="field">
+<label for="societe">Société</label>
+<input id="societe" autocomplete="organization">
+</div>
+<div class="field">
+<label for="montant">Montant indicatif envisagé</label>
+<select id="montant">
+<option>Je préfère en discuter</option>
+<option>Moins de 1 000 €</option>
+<option>1 000 € à 5 000 €</option>
+<option>5 000 € à 20 000 €</option>
+<option>Plus de 20 000 €</option>
+</select>
+</div>
+<div class="field full">
+<label for="message">Votre message</label>
+<textarea id="message" placeholder="Précisez votre demande ou vos questions...">
+</textarea>
+</div>
+<div class="field full">
+<label class="check">
+<input type="checkbox" required> J’accepte que mes informations soient utilisées pour répondre à ma demande. *</label>
+</div>
+<div class="field full">
+<button class="btn" type="submit">Envoyer ma demande →</button>
+<div class="success" id="success" role="status">Votre demande a bien été enregistrée dans cette démonstration. Le raccordement à l’adresse e-mail du client sera réalisé dans la version finale.</div>
+</div>
+</div>
+</form>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div>
+<div class="brand">
+<span class="monogram">HNS</span>
+<span class="brand-copy">Holding Normandie<span>Saint-Lazare</span>
+</span>
+</div>
+</div>
+<div>
+<h3>Navigation</h3>
+<a href="holding.html">La Holding</a>
+<a href="actifs.html">Actifs</a>
+</div>
+<div>
+<h3>Investir</h3>
+<a href="actions.html">Ouverture du capital</a>
+</div>
+</div>
+<div class="company-info"><span><strong>Siège social</strong> 3 rue de l’Arrivée, 75015 Paris</span><span><strong>Capital social</strong> 127 200 €</span><span><strong>SIREN · RCS Paris</strong> 793 472 101</span></div>
+<div class="footer-bottom">© 2026 Holding Normandie Saint-Lazare — Version de présentation.</div>
+</div>
+</footer>
+<script src="site.js">
+</script>
+</body>
+</html>

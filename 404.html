@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Page introuvable — Holding Normandie Saint-Lazare</title>
+<meta name="description" content="La page demandée est introuvable.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='4' fill='%2310283f'/%3E%3Crect x='5' y='5' width='54' height='54' fill='none' stroke='%23b28b4e'/%3E%3Ctext x='32' y='38' text-anchor='middle' font-family='Georgia,serif' font-size='16' font-weight='700' fill='%23d1b27b'%3EHNS%3C/text%3E%3C/svg%3E">
+<style>
+:root{--navy:#10283f;--navy-deep:#071725;--gold:#b28b4e;--gold-light:#d1b27b;--paper:#fffdf8;--ink:#172434;--muted:#697480}
+*{box-sizing:border-box}
+html,body{min-height:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+.page{min-height:100vh;display:grid;grid-template-rows:auto 1fr auto;background:radial-gradient(circle at 82% 16%,rgba(209,178,123,.16),transparent 28%),linear-gradient(135deg,var(--navy-deep),var(--navy) 58%,#183851);color:#fff}
+.topbar{border-bottom:1px solid rgba(209,178,123,.32)}
+.container{width:min(1120px,calc(100% - 40px));margin:auto}
+.nav{min-height:82px;display:flex;align-items:center}
+.brand{display:inline-flex;align-items:center;gap:14px;color:#fff;text-decoration:none}
+.monogram{width:58px;height:42px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold-light);font:700 15px Georgia,serif;letter-spacing:.08em}
+.brand-copy{font:15px Georgia,serif;letter-spacing:.09em;text-transform:uppercase;line-height:1.15}
+.brand-copy span{display:block;margin-top:4px;color:#d8dee3;font:10px Arial,sans-serif;letter-spacing:.2em}
+.content{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.75fr);align-items:center;gap:80px;padding:72px 0}
+.error-code{margin:0;color:rgba(209,178,123,.13);font:clamp(8rem,21vw,18rem)/.72 Georgia,serif;letter-spacing:-.08em;text-align:right;user-select:none}
+.eyebrow{display:flex;align-items:center;gap:10px;color:var(--gold-light);font-size:12px;letter-spacing:.2em;text-transform:uppercase}
+.eyebrow:before{content:"";width:28px;height:1px;background:currentColor}
+h1{max-width:700px;margin:20px 0;font:500 clamp(2.7rem,6vw,5rem)/1.04 Georgia,serif;letter-spacing:-.035em}
+p{max-width:600px;margin:0;color:#d8e0e6;font-size:1.08rem}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{min-height:50px;display:inline-flex;align-items:center;justify-content:center;padding:12px 22px;border:1px solid var(--gold);background:var(--gold);color:#fff;text-decoration:none;font:16px Georgia,serif;transition:.2s}
+.btn:hover,.btn:focus-visible{background:#96713a;transform:translateY(-2px)}
+.btn-secondary{background:transparent}.btn-secondary:hover,.btn-secondary:focus-visible{background:rgba(255,255,255,.08)}
+.footer{padding:22px 0;border-top:1px solid rgba(255,255,255,.1);color:#91a2af;font-size:12px}
+@media(max-width:760px){.nav{min-height:72px}.content{grid-template-columns:1fr;gap:34px;padding:54px 0}.error-code{grid-row:1;text-align:left;font-size:8rem}.message{grid-row:2}h1{font-size:clamp(2.5rem,12vw,4rem)}.actions .btn{width:100%}}
+</style>
+</head>
+<body>
+<div class="page">
+<header class="topbar">
+<div class="container nav">
+<a class="brand" data-home href="./index.html" aria-label="Retour à l’accueil">
+<span class="monogram">HNS</span>
+<span class="brand-copy">Holding Normandie<span>Saint-Lazare</span></span>
+</a>
+</div>
+</header>
+<main class="container content">
+<div class="message">
+<div class="eyebrow">Erreur 404</div>
+<h1>Cette page reste à construire.</h1>
+<p>L’adresse demandée n’existe pas ou a été déplacée. Vous pouvez revenir à l’accueil ou nous contacter pour poursuivre votre visite.</p>
+<div class="actions">
+<a class="btn" data-home href="./index.html">Retourner à l’accueil →</a>
+<a class="btn btn-secondary" data-contact href="./contact.html">Nous contacter</a>
+</div>
+</div>
+<p class="error-code" aria-hidden="true">404</p>
+</main>
+<footer class="footer"><div class="container">© 2026 Holding Normandie Saint-Lazare</div></footer>
+</div>
+<script>
+(function(){
+  var onGithub=location.hostname.endsWith('.github.io');
+  var firstPart=location.pathname.split('/').filter(Boolean)[0];
+  var base=onGithub&&firstPart?'/'+firstPart+'/':'/';
+  document.querySelectorAll('[data-home]').forEach(function(link){link.href=base});
+  document.querySelectorAll('[data-contact]').forEach(function(link){link.href=base+'contact.html'});
+}());
+</script>
+</body>
+</html>

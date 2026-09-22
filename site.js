@@ -1,0 +1,2 @@
+const button=document.querySelector('.menu-button');const nav=document.querySelector('.navlinks');if(button&&nav){button.addEventListener('click',()=>{const open=nav.classList.toggle('open');button.setAttribute('aria-expanded',String(open))})}
+const form=document.querySelector('#investor-form');if(form){form.addEventListener('submit',e=>{e.preventDefault();document.querySelector('#success').classList.add('show');form.reset();document.querySelector('#success').scrollIntoView({behavior:'smooth',block:'center'})})}
